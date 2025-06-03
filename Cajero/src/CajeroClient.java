@@ -24,6 +24,29 @@ public class CajeroClient {
                     // TODO: handle exception
                 }
             }
+            while (true) {
+                try {
+                    System.out.println("Seleccione la accion que desea realizar: ");
+                    System.out.println("1. Consultar saldo");
+                    System.out.println("2. Depositar saldo");
+                    System.out.println("3. Retirar efectivo");
+
+                    switch (operation) {
+                        case 1:
+                            result = stub.add(a,b);
+                            system.out.println("Su saldo es de:" + result);
+                            break;
+                        case 2:
+                            result = stub.add(a,b);
+                            System.out.println("Su nuevo saldo es de:" + result);
+                            break;
+                        case 3:
+                            result = stub.add(a,b);
+                            system.out.println("Saldo restante:" + result);
+                            break;
+                    }
+                }
+            }
         } 
     }
 }
